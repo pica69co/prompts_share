@@ -11,11 +11,10 @@ const PromptSchema = new Schema({
   },
   tag: {
     type: String,
-    required: [true, 'Prompt is required.'],
-  },
-  
+    required: [true, 'Tag is required.'],
+  }
 });
 
-const Prompt = models.Prompt || model("Prompt", PromptSchema);
+const Prompt = models.Prompt || model('Prompt', PromptSchema);
 
 export default Prompt;
